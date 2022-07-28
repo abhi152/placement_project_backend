@@ -44,7 +44,7 @@ router.post("/data",(req,res)=>{
 
 router.get("/getalldata",(req,res)=>{
     Company.find().then((data)=>{
-        res.json(data)
+        res.send(data)
     })
     
 })
